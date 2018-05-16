@@ -1,14 +1,14 @@
 
 body{
-	background-color: #EFEFEF;
+    background-color: #EFEFEF;
     margin: 0;
 }
-ul li{ list-style: none; }
+ol,ul,li{ list-style: none; }
 a{text-decoration: none;}
 .clearfix::after{
-	content: '';
-	display: block;
-	clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 *{
     margin: 0;
@@ -21,9 +21,9 @@ hr{
 }
 /*nav*/
 .topNavBar{
-	padding: 20px 0px;
-	position: fixed;
-	width: 100%;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
 
 }
 .topNavBar-inner{
@@ -37,24 +37,24 @@ hr{
   padding: 0;
 }
 .topNavBar nav ul li{
-	float: left;
-	margin:0 17px;
+    float: left;
+    margin:0 17px;
 }
 .topNavBar nav ul li a{
-	font-size: 12px;
-	color: rgba(255,255,255,0.8);
-	font-weight: bold;
-	border-bottom: 3px solid transparent;
-	padding: 5px 0;
-	display: block;
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    padding: 5px 0;
+    display: block;
 }
 .topNavBar nav ul li a:hover{
-	border-bottom: 3px solid #e06567;
+    border-bottom: 3px solid #e06567;
 }
 /*logo*/
 .topNavBar .logo{
-	font-size: 24px;
-	font-family: "Arial Black";
+    font-size: 24px;
+    font-family: "Arial Black";
 
 }
 .topNavBar .logo .rs{
@@ -67,14 +67,19 @@ hr{
 
 /*banner*/
 .banner{
-	height: 515px;
-	background-position: center center;
-	background-size:cover;
+    height: 515px;
+    background-position: center center;
+    background-size:cover;
+}
+/*main*/
+main{
+    margin-top:-340px;
 }
 .userCard{
-	max-width: 940px;
-	margin: 0 auto;
+    max-width: 940px;
+    margin: 0 auto;
     background:#fff;
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.5) ;
 }
 .welcome{
    background-color:#E6686A;
@@ -84,6 +89,7 @@ hr{
     line-height: 22px;
     position: relative;
     margin:10px 0;
+    border-radius: 3px;
 }
 .userCard .welcome .triangle{
     display: block;
@@ -112,7 +118,7 @@ hr{
 .userCard .text hr{
     margin:20px 0;
 }
-.card{
+.i-card{
     padding: 50px;
 }
 .userCard dd,.userCard dt{
@@ -148,5 +154,127 @@ hr{
     height: 30px;
     fill: #fff;
     vertical-align: top;
-    
+}
+.downloadResume{
+    font-size:14px;
+    line-height: 16px;
+    padding:21px 55px;
+    border:1px solid #cdcfd1;
+    display: inline-block;
+    color: #3d4451;
+    background-color: #EFEFEF;
+    border-radius:3px;
+    font-weight: bold;
+    margin: 32px 0;
+}
+.downloadResume-box{
+    text-align: center;
+}
+.downloadResume:hover{
+    box-shadow:0 4px 13px 0 rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s;
+}
+.selfIntro{
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "黑体";
+}
+
+/*容器*/
+.workShow,.skill{
+    max-width: 940px;
+    margin: 60px auto 0;
+}
+
+.workShow h2,.skill h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.skill ol{
+    background-color: #FFF;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
+    padding: 42px 50px 15px;
+    margin-top: 10px;
+}
+.skill ol li{
+    width: 50%;
+    box-sizing: border-box;
+    padding:0 40px;
+
+}
+.skill ol li:nth-child(odd){
+    float: left;
+}
+.skill ol li:nth-child(even){
+    float: right;
+}
+.skill .proBar{
+    height: 5px;
+    background-color:#fae1e1;
+    border-radius: 3px;
+    margin:4px 0 40px;
+}
+.skill .pro{
+    height: 100%;
+    background-color: #cf5d5f;
+    width: 70%;
+    border-radius: 3px;
+}
+.workShow{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.workShow nav{
+    text-align: center;
+    display: inline-block;
+    margin-top: 32px;
+}
+.workShow ul{
+    display: inline-block;
+    vertical-align: top;
+    margin:0 auto;
+}
+.workShow ul li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.workShow ul li:first-child{
+    margin-left: 0;
+}
+.workShow nav .bar{
+    height: 5px;
+    background: #fff;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+.workShow nav .bar-inner{
+    height: 100%;
+    background: #e6686a;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+.workShow nav .bar.state-1 .bar-inner{
+    margin-left:0;
+    width: 50px;
+}
+
+.workShow nav .bar.state-2 .bar-inner{
+    margin-left:65px;
+    width: 96px;
+}
+
+.workShow nav .bar.state-3 .bar-inner{
+    margin-left:186px;
+    width: 50px;
+}
+.jobs{
+    position: relative;
+}
+.jobs>div{
+    position:absolute;
 }
