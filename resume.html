@@ -11,7 +11,7 @@
         .loading::after{  animation-delay:0.75s;  }
         @keyframes x{ 0%{  width:0px; height:0px; opacity:1;  } 100%{  width:100px; height:100px; opacity:0;  } }
         .icon {  width: 1em; height: 1em;  vertical-align: -0.15em;  fill: currentColor;  overflow: hidden;  }
-        .site-welcome{  display: none;  position:fixed;  top:0; left:0;  right:0; bottom:0;  background: #999;  z-index:1;  justify-content: center;  align-items: center;  }
+        .site-welcome{  display: none;  position:fixed;  top:0; left:0;  right:0; bottom:0;  background: #999;  z-index:999;  justify-content: center;  align-items: center;  }
         .site-welcome.active{  display: flex;  }
     </style>
 </head>
@@ -19,33 +19,47 @@
 <div id="siteWelcome" class="site-welcome active">
     <div class="loading"></div>
 </div>
-    <div class="topNavBar" >
-        <div class="topNavBar-inner clearfix">
-            <a class="logo" href="#" alt="logo" style="float: left;">
-                <span class="rs">RS</span><span class="card">card</span>
-            </a>
-            <nav style="float: right;">
-                <ul class="clearfix">
-                    <li><a href="#">关于</a></li>
-                    <li><a href="#">技能</a></li>
-                    <li><a href="#">经验</a></li>
-                    <li><a href="#">作品</a></li>
-                    <li><a href="#">博客</a></li>
-                    <li><a href="#">日历</a></li>
-                    <li><a href="#">联系</a></li>
-                    <li><a href="#">其他</a></li>
-                </ul>
-            </nav>
-        </div>
+<div id="topNavBar" class="topNavBar" >
+    <div class="topNavBar-inner clearfix">
+        <a class="logo" href="#" alt="logo" style="float: left;">
+            <span class="rs">RS</span><span class="card">card</span>
+        </a>
+        <nav class="menu" style="float: right;">
+            <ul class="clearfix">
+                <li><a href="#siteAbout">关于</a></li>
+                <li><a href="#siteSkills">技能</a></li>
+                <li><a href="#siteExperience">经验</a></li>
+                <li>
+                    <a  href="#siteWorks">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">博客</a>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                    </ul>
+                </li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="banner" style="background:url(./img/bg.jpg);"></div>
-    <main>
-        <div class="userCard">
-            <div class="i-card clearfix">
-                <div class="picture">
+</div>
+<div class="banner" style="background:url(./img/bg.jpg);"></div>
+<main>
+    <div id="siteAbout" class="userCard">
+        <div class="i-card clearfix">
+            <div class="picture">
                 <img src="./img/tx.jpg" width="299px" height="347px" alt="头像">
             </div>
-                <div class="text">
+            <div class="text">
                 <div class="profile">
                     <span class="welcome">hello
                         <span class="triangle"></span>
@@ -62,131 +76,163 @@
                 </div>
 
             </div>
-            </div>
-            <footer class="media">
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-qq"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-weixin"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-githublogo"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-zhihu"></use>
-                    </svg>
-                </a>
-            </footer>
         </div>
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-githublogo"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
 
-        <p class="downloadResume-box">
-            <a href="" class="downloadResume">下载PDF简历</a>
-        </p>
+    <p class="downloadResume-box">
+        <a href="" class="downloadResume">下载PDF简历</a>
+    </p>
 
-        <p class="selfIntro">
-            简介 <br>
-            技能
-        </p>
-    </main>
-    <section class="skill">
-        <h2>技能</h2>
-        <ol class="clearfix">
-            <li>
-                <h3>HTML 5 &amp; CSS 3</h3>
-                <div class="proBar">
-                    <div class="pro">
-                    </div>
+    <p class="selfIntro">
+        简介 <br>
+        技能
+    </p>
+</main>
+<section id="siteSkills" class="skill">
+    <h2>技能</h2>
+    <ol class="clearfix">
+        <li>
+            <h3>HTML 5 &amp; CSS 3</h3>
+            <div class="proBar">
+                <div class="pro">
                 </div>
-            </li>
-            <li>
-                <h3>JavaScript</h3>
-                <div class="proBar">
-                    <div class="pro">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <h3>jQuery.js</h3>
-                <div class="proBar">
-                    <div class="pro">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <h3>Vue.js</h3>
-                <div class="proBar">
-                    <div class="pro">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <h3>React.js</h3>
-                <div class="proBar">
-                    <div class="pro">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <h3>Webpack</h3>
-                <div class="proBar">
-                    <div class="pro">
-                    </div>
-                </div>
-            </li>
-        </ol>
-    </section>
-    <section class="workShow">
-        <h2>作品集</h2>
-        <nav>
-            <ul class="clearfix">
-                <li id="portAll">所有</li>
-                <li id="portVallina">原生JS&amp;CSS</li>
-                <li id="portFramework">框架</li>
-            </ul>
-            <div id="portBar" class="bar state-1">
-                <div class="bar-inner"></div>
             </div>
-        </nav>
-
-        <div class="jobs" style="height: 597px">
-            <div class="big" style="top: 0; left: 0">
-                <img src="./img/big.jpg" alt="作品1" width="606px" height="597px">
+        </li>
+        <li>
+            <h3>JavaScript</h3>
+            <div class="proBar">
+                <div class="pro">
+                </div>
             </div>
-            <div class="small" style="top: 0; left: 637px">
-                <img src="./img/small01.jpg" alt="作品2" width="293px" height="278px">
+        </li>
+        <li>
+            <h3>jQuery.js</h3>
+            <div class="proBar">
+                <div class="pro">
+                </div>
             </div>
-            <div class="small" style="top: 318px; left: 637px">
-                <img src="./img/small02.jpg" alt="作品3" width="293px" height="278px">
+        </li>
+        <li>
+            <h3>Vue.js</h3>
+            <div class="proBar">
+                <div class="pro">
+                </div>
             </div>
+        </li>
+        <li>
+            <h3>React.js</h3>
+            <div class="proBar">
+                <div class="pro">
+                </div>
+            </div>
+        </li>
+        <li>
+            <h3>Webpack</h3>
+            <div class="proBar">
+                <div class="pro">
+                </div>
+            </div>
+        </li>
+    </ol>
+</section>
+<section id="siteWorks" class="workShow">
+    <h2>作品集</h2>
+    <nav>
+        <ul class="clearfix">
+            <li id="portAll">所有</li>
+            <li id="portVallina">原生JS&amp;CSS</li>
+            <li id="portFramework">框架</li>
+        </ul>
+        <div id="portBar" class="bar state-1">
+            <div class="bar-inner"></div>
         </div>
+    </nav>
 
-    </section>
+    <div class="jobs" style="height: 597px">
+        <div class="big" style="top: 0; left: 0">
+            <img src="./img/big.jpg" alt="作品1" width="606px" height="597px">
+        </div>
+        <div class="small" style="top: 0; left: 637px">
+            <img src="./img/small01.jpg" alt="作品2" width="293px" height="278px">
+        </div>
+        <div class="small" style="top: 318px; left: 637px">
+            <img src="./img/small02.jpg" alt="作品3" width="293px" height="278px">
+        </div>
+    </div>
 
-    <script>
+</section>
+
+<script>
+    setTimeout(function(){
         siteWelcome.classList.remove('active');
+    },1000);
 
-        portAll.onclick = function(){
-            portBar.className = 'bar state-1'
-        };
-        portVallina.onclick = function(){
-            portBar.className = 'bar state-2'
-        };
-        portFramework.onclick = function(){
-            portBar.className = 'bar state-3'
-        };
-    </script>
+    window.onscroll = function(xxxxx){
+        if(window.scrollY > 0){
+            topNavBar.classList.add('sticky')
+        }else{
+            topNavBar.classList.remove('sticky')
+        }
+    };
+
+    let liTags = document.querySelectorAll('nav.menu > ul > li')
+    for(let i=0; i<liTags.length;i++){
+        liTags[i].onmouseenter = function(x){
+            x.currentTarget.classList.add('active')
+        }
+        liTags[i].onmouseleave = function(x){
+            x.currentTarget.classList.remove('active')
+        }
+    };
+
+    let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+    for(let i=0;i<aTags.length;i++){
+        aTags[i].onclick = function(x){
+            x.preventDefault()
+            let a = x.currentTarget
+            let href = a.getAttribute('href');
+            let element = document.querySelector(href);
+            let top = element.offsetTop
+            window.scrollTo(0,top - 80)
+        }
+    }
+
+    portAll.onclick = function(){
+        portBar.className = 'bar state-1'
+    };
+    portVallina.onclick = function(){
+        portBar.className = 'bar state-2'
+    };
+    portFramework.onclick = function(){
+        portBar.className = 'bar state-3'
+    };
+</script>
 </body>
 </html>
