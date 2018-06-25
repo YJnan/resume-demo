@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8b58cfd-76c8-4342-ab76-29260f13e9cf" name="Default" comment="添加loading加载动画&#10;给导航栏添加相应的js效果">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/resume.css" afterPath="$PROJECT_DIR$/css/resume.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume.html" afterPath="$PROJECT_DIR$/resume.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="resume.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="resume.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27570093">
-              <caret line="204" column="6" selection-start-line="204" selection-start-column="6" selection-end-line="204" selection-end-column="6" />
+            <state vertical-scroll-proportion="-4.440678">
+              <caret line="201" column="5" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#nav#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -38,22 +39,25 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1529805088622" expanded="true" signature="2575:2587" placeholder="### ... ###" />
-                <marker date="1529805088622" expanded="true" signature="5963:5976" placeholder="### ... ###" />
-                <marker date="1529805088622" expanded="true" signature="6111:6128" placeholder="### ... ###" />
-                <marker date="1529805088622" expanded="true" signature="6267:6284" placeholder="### ... ###" />
-                <marker date="1529805088622" expanded="true" signature="6526:6532" placeholder="..." />
-                <marker date="1529805088622" expanded="true" signature="6526:6533" placeholder="{...}" />
+                <element signature="e#7838#8064#0" expanded="false" />
+                <element signature="e#8162#8237#0" expanded="false" />
+                <element signature="e#8311#9192#0" expanded="false" />
+                <marker date="1529890117825" expanded="true" signature="2589:2601" placeholder="### ... ###" />
+                <marker date="1529890117825" expanded="true" signature="5997:6010" placeholder="### ... ###" />
+                <marker date="1529890117825" expanded="true" signature="6145:6162" placeholder="### ... ###" />
+                <marker date="1529890117825" expanded="true" signature="6301:6318" placeholder="### ... ###" />
+                <marker date="1529890117825" expanded="true" signature="6560:6566" placeholder="..." />
+                <marker date="1529890117825" expanded="true" signature="6560:6567" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="resume.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/resume.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.137932">
-              <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.5820359">
+              <caret line="297" column="1" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -68,8 +72,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/resume.css" />
-        <option value="$PROJECT_DIR$/css/resume.css" />
         <option value="$PROJECT_DIR$/resume.html" />
+        <option value="$PROJECT_DIR$/css/resume.css" />
       </list>
     </option>
   </component>
@@ -79,10 +83,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="898" />
-    <option name="y" value="1" />
-    <option name="width" value="1040" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="添加" />
@@ -245,10 +249,10 @@
     <option name="totallyTimeSpent" value="58000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="898" y="1" width="1040" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05788423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.030558482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -295,12 +299,15 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1529805088622" expanded="true" signature="2575:2587" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="5963:5976" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6111:6128" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6267:6284" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6526:6532" placeholder="..." />
-            <marker date="1529805088622" expanded="true" signature="6526:6533" placeholder="{...}" />
+            <element signature="e#7838#8064#0" expanded="false" />
+            <element signature="e#8162#8237#0" expanded="false" />
+            <element signature="e#8311#9192#0" expanded="false" />
+            <marker date="1529890117825" expanded="true" signature="2589:2601" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="5997:6010" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6145:6162" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6301:6318" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6560:6566" placeholder="..." />
+            <marker date="1529890117825" expanded="true" signature="6560:6567" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -325,28 +332,23 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1529805088622" expanded="true" signature="2575:2587" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="5963:5976" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6111:6128" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6267:6284" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6526:6532" placeholder="..." />
-            <marker date="1529805088622" expanded="true" signature="6526:6533" placeholder="{...}" />
+            <element signature="e#7838#8064#0" expanded="false" />
+            <element signature="e#8162#8237#0" expanded="false" />
+            <element signature="e#8311#9192#0" expanded="false" />
+            <marker date="1529890117825" expanded="true" signature="2589:2601" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="5997:6010" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6145:6162" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6301:6318" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6560:6566" placeholder="..." />
+            <marker date="1529890117825" expanded="true" signature="6560:6567" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/resume.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.137932">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27570093">
-          <caret line="204" column="6" selection-start-line="204" selection-start-column="6" selection-end-line="204" selection-end-column="6" />
+        <state vertical-scroll-proportion="-4.440678">
+          <caret line="201" column="5" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#nav#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -355,13 +357,24 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1529805088622" expanded="true" signature="2575:2587" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="5963:5976" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6111:6128" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6267:6284" placeholder="### ... ###" />
-            <marker date="1529805088622" expanded="true" signature="6526:6532" placeholder="..." />
-            <marker date="1529805088622" expanded="true" signature="6526:6533" placeholder="{...}" />
+            <element signature="e#7838#8064#0" expanded="false" />
+            <element signature="e#8162#8237#0" expanded="false" />
+            <element signature="e#8311#9192#0" expanded="false" />
+            <marker date="1529890117825" expanded="true" signature="2589:2601" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="5997:6010" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6145:6162" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6301:6318" placeholder="### ... ###" />
+            <marker date="1529890117825" expanded="true" signature="6560:6566" placeholder="..." />
+            <marker date="1529890117825" expanded="true" signature="6560:6567" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/resume.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5820359">
+          <caret line="297" column="1" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

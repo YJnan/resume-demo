@@ -29,7 +29,7 @@
             <ul class="clearfix">
                 <li><a href="#siteAbout">关于</a></li>
                 <li><a href="#siteSkills">技能</a></li>
-                <li><a href="#siteExperience">经验</a></li>
+                <!--<li><a href="#siteExperience">经验</a></li>-->
                 <li>
                     <a  href="#siteWorks">作品</a>
                     <ul class="submenu">
@@ -55,7 +55,7 @@
 </div>
 <div class="banner" style="background:url(./img/bg.jpg);"></div>
 <main>
-    <div id="siteAbout" class="userCard">
+    <div data-x id="siteAbout" class="userCard">
         <div class="i-card clearfix">
             <div class="picture">
                 <img src="./img/tx.jpg" width="299px" height="347px" alt="头像">
@@ -116,7 +116,7 @@
         技能
     </p>
 </main>
-<section id="siteSkills" class="skill">
+<section data-x="" id="siteSkills" class="skill">
     <h2>技能</h2>
     <ol class="clearfix">
         <li>
@@ -163,7 +163,7 @@
         </li>
     </ol>
 </section>
-<section id="siteWorks" class="workShow">
+<section data-x="" id="siteWorks" class="workShow">
     <h2>作品集</h2>
     <nav>
         <ul class="clearfix">
@@ -194,15 +194,45 @@
 <script>
     setTimeout(function(){
         siteWelcome.classList.remove('active');
-    },1000);
+    },100);
 
+    let specialTags = document.querySelectorAll('[data-x]')
+    for(let i = 0; i<specialTags.length;i++){
+       specialTags[i].classList.add('offset')
+    }
+
+    setTimeout(function(){
+        self()
+    },200)
+    self()
     window.onscroll = function(xxxxx){
         if(window.scrollY > 0){
             topNavBar.classList.add('sticky')
         }else{
             topNavBar.classList.remove('sticky')
         }
-    };
+        self()
+    }
+
+    function self(){
+        let specialTags = document.querySelectorAll('[data-x]')
+        let minIndex = 0
+        for(let i = 0; i<specialTags.length;i++){
+            if(Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){
+                minIndex = i
+            }
+        }
+
+        specialTags[minIndex].classList.remove('offset')
+        let id = specialTags[minIndex].id
+        let a = document.querySelector('a[href = "#' + id + '"]')
+        let li = a.parentNode
+        let brothersAndNe = li.parentNode.children
+        for(let i=0;i<brothersAndNe.length;i++){
+            brothersAndNe[i].classList.remove('highlight')
+        }
+
+    }
 
     let liTags = document.querySelectorAll('nav.menu > ul > li')
     for(let i=0; i<liTags.length;i++){
