@@ -255,7 +255,9 @@ main{
     max-width: 940px;
     margin: 60px auto 0;
 }
-
+.workShow h2{
+    margin-bottom: 32px;
+}
 .workShow h2,.skill h2{
     text-align: center;
     color: #3d4451;
@@ -263,6 +265,13 @@ main{
     line-height: 1.2;
     font-weight: 600;
 }
+.workShow .swiper-container {
+                width: 668px;
+                height: 501px;
+            }  
+            .swiper-slide{
+                background:white;
+            }
 .skill ol{
     background-color: #FFF;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
@@ -305,7 +314,7 @@ section.skill.offset .pro{
     text-align: center;
     margin-bottom: 100px;
 }
-.workShow nav{
+/* .workShow nav{
     text-align: center;
     display: inline-block;
     margin-top: 32px;
@@ -348,7 +357,7 @@ section.skill.offset .pro{
 .workShow nav .bar.state-3 .bar-inner{
     margin-left:186px;
     width: 50px;
-}
+} */
 .jobs{
     position: relative;
 }
