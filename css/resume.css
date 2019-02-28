@@ -258,7 +258,7 @@ main{
 .workShow h2{
     margin-bottom: 32px;
 }
-.workShow h2,.skill h2{
+.workShow h2,.skill h2,.message h2{
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -363,4 +363,15 @@ section.skill.offset .pro{
 }
 .jobs>div{
     position:absolute;
+}
+
+.message ol {
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 1px solid #DDD;
+    background: #F4F4F4;
+}
+.message ol li{
+    padding: 16px;
+    border-bottom: 1px solid #DDD;
 }
