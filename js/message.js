@@ -1,6 +1,4 @@
 !function () {
-  var view = document.querySelector('section.message')
-
   var model = {
     //获取数据
     init: function () {
@@ -10,18 +8,20 @@
     },
     fetch: function(){
       var query = new AV.Query('Message');
-      return query.find()
+      return query.find()//Promise 对象
     },
-    //保存数据
-    save: function(){
+    //创建数据
+    save: function(name, content){
       var Message = AV.Object.extend('Message');
       var message = new Message();
       return message.save({
         'name': name,
-        'content': content
+        'content': content,
       })
     }
   }
+
+  var view = document.querySelector('section.message')
 
   var controller = {
     view: null,
@@ -39,7 +39,7 @@
     loadMessages: function () {
       this.model.fetch().then(
           (messages) => {
-            let array = messages.map((item) => item.attributes)
+            let array = messages.map((item) => item.attributes )
             array.forEach((item) => {
               let li = document.createElement('li')
               li.innerText = `${item.name}:${item.content}`
@@ -64,9 +64,12 @@
         let messageList = document.querySelector('#messageList')
         messageList.appendChild(li)
         myForm.querySelector('input[name=content]').value = ''
+        console.log(object)
       })
     }
+
   }
 
   controller.init(view, model)
+
 }.call()
